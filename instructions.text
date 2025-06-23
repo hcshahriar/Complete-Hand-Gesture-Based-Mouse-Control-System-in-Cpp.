@@ -9,17 +9,17 @@ g++ -o gesture_mouse gesture_mouse.cpp -I"path_to_opencv_include" -L"path_to_ope
 
 Features Implemented
 
-1. **Hand Tracking**: Uses skin color detection and contour analysis
-2. **Finger Detection**: Counts fingers using convexity defects
-3. **Mouse Movement**: Smooth cursor movement with averaging
-4. **Click Detection**: Detects when fingers come together
-5. **Visual Feedback**: Shows detected hand and fingers
+1. Hand Tracking : Uses skin color detection and contour analysis
+2. Finger Detection : Counts fingers using convexity defects
+3. Mouse Movement : Smooth cursor movement with averaging
+4. Click Detection : Detects when fingers come together
+5. Visual Feedback : Shows detected hand and fingers
 
 Customization Tips
 
-1. Adjust `MIN_CONTOUR_AREA` and `MAX_CONTOUR_AREA` for your camera distance
-2. Modify HSV range in `inRange()` for better skin detection
-3. Change `SMOOTHING_FACTOR` for more/less cursor smoothing
-4. Adjust `CLICK_THRESHOLD` for click sensitivity
+1. Adjust MIN_CONTOUR_AREA and MAX_CONTOUR_AREA for your camera distance
+2. Modify HSV range in inRange() for better skin detection
+3. Change SMOOTHING_FACTOR for more/less cursor smoothing
+4. Adjust CLICK_THRESHOLD for click sensitivity
 
 This is a complete system that should work with most webcams. For better accuracy, consider adding calibration routines or machine learning-based hand recognition.
